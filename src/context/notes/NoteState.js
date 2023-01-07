@@ -12,7 +12,7 @@ const NoteState = (props) =>{
           "__v": 0
         },
         {
-            "_id": "63a831663f2291927af11b10",
+            "_id": "63a831663f2291927af14b10",
             "user": "63a48bd075b8a23c18f225ca",
             "title": "Mahi's note",
             "description": "Get up buddy",
@@ -21,7 +21,7 @@ const NoteState = (props) =>{
             "__v": 0
           },
         {
-            "_id": "63a831663f2291927af11b10",
+            "_id": "63a831663f2691927af11b10",
             "user": "63a48bd075b8a23c18f225ca",
             "title": "Mahi's note",
             "description": "Get up buddy",
@@ -30,7 +30,7 @@ const NoteState = (props) =>{
             "__v": 0
           },
           {
-            "_id": "63a831663f2291927af11b10",
+            "_id": "63a831654f2291927af11b10",
             "user": "63a48bd075b8a23c18f225ca",
             "title": "Mahi's note",
             "description": "Get up buddy",
