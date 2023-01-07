@@ -12,6 +12,33 @@ const NoteState = (props) =>{
           "__v": 0
         },
         {
+            "_id": "63a831663f2291927af11b10",
+            "user": "63a48bd075b8a23c18f225ca",
+            "title": "Mahi's note",
+            "description": "Get up buddy",
+            "tag": "wakeUp",
+            "date": "2022-12-25T11:17:58.218Z",
+            "__v": 0
+          },
+        {
+            "_id": "63a831663f2291927af11b10",
+            "user": "63a48bd075b8a23c18f225ca",
+            "title": "Mahi's note",
+            "description": "Get up buddy",
+            "tag": "wakeUp",
+            "date": "2022-12-25T11:17:58.218Z",
+            "__v": 0
+          },
+          {
+            "_id": "63a831663f2291927af11b10",
+            "user": "63a48bd075b8a23c18f225ca",
+            "title": "Mahi's note",
+            "description": "Get up buddy",
+            "tag": "wakeUp",
+            "date": "2022-12-25T11:17:58.218Z",
+            "__v": 0
+          },
+        {
           "_id": "63b974503cdbf75e561d2ce9",
           "user": "63a48bd075b8a23c18f225ca",
           "title": "Adi's Note",
