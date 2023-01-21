@@ -1,9 +1,8 @@
 import React, { useContext, useState } from "react";
 import NoteContext from "../context/notes/NoteContext";
-
 export const AddNote = () => {
   const notesContext = useContext(NoteContext);
-  const { notes, addNote } = notesContext;
+  const {addNote } = notesContext;
   const [note, setnote] = useState({ title: "", description: "", tag: "default" });
   const addNoteFunction = (event) => {
     event.preventDefault()
@@ -46,7 +45,7 @@ export const AddNote = () => {
           className="btn btn-primary"
           onClick={addNoteFunction}
         >
-          Submit
+          Add Note
         </button>
       </form>
     </div>
