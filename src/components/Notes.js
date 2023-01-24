@@ -109,15 +109,18 @@ export const Notes = () => {
               >
                 Close
               </button>
-              <button type="button" className="btn btn-primary" onClick={addNoteFunction}>
+              <button type="button" className="btn btn-primary" onClick={addNoteFunction} disabled={note.etitle.length<5 || note.edescription.length<5}>
                 Update Note
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="row my-3">
+      <div className=" container row my-3">
         <h2>Your Notes</h2>
+        <div className="container">
+          {notes.length===0 && "No notes to display"}
+        </div>
         {notes.map((note) => {
           return (
             <NoteItem note={note} key={note._id} updateNote={updateNote} />

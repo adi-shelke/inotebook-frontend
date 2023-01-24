@@ -27,19 +27,9 @@ const NoteState = (props) =>{
             },
             body: JSON.stringify({title, description, tag}) 
           });
-          let retNote=(await response.json())
-          let note={
-            "_id": retNote._id,
-            "user": retNote.user,
-            "title": title,
-            "description": description,
-            "tag": tag,
-            "date": retNote.date,
-            "__v": 0
-          }
+          let note=(await response.json())
           setnotes(notes.concat(note))
         }
-
       //Deleting a Note
       const deleteNote = async (id) => {
         const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
