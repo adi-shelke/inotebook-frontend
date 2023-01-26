@@ -4,20 +4,16 @@ import { AddNote } from "./AddNote";
 import { NoteItem } from "./NoteItem";
 export const Notes = () => {
   const notesContext = useContext(NoteContext);
-  const { notes, fetchAllNote, editNote } = notesContext;
+  const { notes, fetchAllNote, editNote,token} = notesContext;
 
   useEffect(() => {
     fetchAllNote();
-    // eslint-disable-next-line
-  }, []);
-
+  },[token]);
   const [note, setnote] = useState({ id:"",etitle: "", edescription: "", etag: "" });
-
   const updateNote = (currentNote) => {
     editModal.current.click();
     setnote({id:currentNote._id,etitle:currentNote.title,edescription:currentNote.description,etag:currentNote.tag}) 
   };
-
   const editModal = useRef(null);
   const closeRef = useRef(null)
   const addNoteFunction = (event) => {
