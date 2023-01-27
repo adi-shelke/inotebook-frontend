@@ -1,11 +1,22 @@
 import { useState } from "react";
 import NoteContext from "./NoteContext";
+
 const NoteState = (props) =>{
   const host ="http://localhost:5000"
   // let token=localStorage.getItem("token")
   const [token, setToken] = useState(localStorage.getItem("token"))
     const fetchedNotes =[]
       const [notes, setnotes] = useState(fetchedNotes)
+      const [alert, setAlert] = useState(null)
+    const showAlert =(message,type) =>{
+        setAlert({
+            msg:message,
+            type:type
+        })
+        setTimeout(() => {
+            setAlert(null)
+        }, 1500);
+    }
       
       //Fetch all notes
       const fetchAllNote = async (title,description,tag) => {
@@ -34,6 +45,7 @@ const NoteState = (props) =>{
           });
           let note=(await response.json())
           setnotes(notes.concat(note))
+          showAlert("Note added successfully","success")
         }
       //Deleting a Note
       const deleteNote = async (id) => {
@@ -47,6 +59,7 @@ const NoteState = (props) =>{
         });
         const newNotes=notes.filter((note)=>{return note._id!==id})
         setnotes(newNotes)
+        showAlert("Note deleted successfully","danger")
       }
 
 
@@ -73,11 +86,12 @@ const NoteState = (props) =>{
           }
         }
         setnotes(newNotes)
+        showAlert("Note updated successfully","success")
       }
 
 
     return(
-        <NoteContext.Provider value={{notes,addNote,deleteNote,editNote,fetchAllNote,setToken,token}}>
+        <NoteContext.Provider value={{notes,addNote,deleteNote,editNote,fetchAllNote,setToken,token,alert}}>
             {props.children}
         </NoteContext.Provider>
     )
