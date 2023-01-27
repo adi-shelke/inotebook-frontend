@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
       <nav className="navbar bg-dark navbar-expand-lg  navbar-dark ">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/home">
             iNotebook
           </Link>
           <button
