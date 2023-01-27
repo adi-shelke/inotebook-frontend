@@ -15,7 +15,7 @@ export const Login = () => {
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
-    const response = await fetch(`http://localhost:5000/api/auth/login`, {
+    const response = await fetch(`https://noted-aaej.onrender.com/api/auth/login`, {
       method: 'POST',
       headers: {  
         'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ export const Login = () => {
     if(json.success){ //success is a variable sent as a response, if true then redirect user to dashboard
       localStorage.setItem("token",json.authtoken)
       setToken(json.authtoken)
-      navigate("/")
+      navigate("/home")
     }
     else
     {

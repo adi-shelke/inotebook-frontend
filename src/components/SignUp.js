@@ -21,7 +21,7 @@ export const SignUp = () => {
     if (!(credentials.password === credentials.cpassword)){
       alert("Password Didn't match");
     } else {
-      const response = await fetch(`http://localhost:5000/api/auth/createuser`, {
+      const response = await fetch(`https://noted-aaej.onrender.com/api/auth/createuser`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export const SignUp = () => {
         //success is a variable sent as a response, if true then redirect user to dashboard
         localStorage.setItem("token", json.authtoken);
         setToken(json.authtoken)
-        navigate("/")
+        navigate("/login")
       } else {
         alert("Invalid credentials");
       }
@@ -86,7 +86,7 @@ export const SignUp = () => {
             className="form-control"
             id="password"
             name="password"
-            minLength={5}
+            minLength={8}
             required
             onChange={onChange}
           />
@@ -101,7 +101,7 @@ export const SignUp = () => {
             id="cpassword"
             name="cpassword"
             required
-            minLength={5}
+            minLength={8}
             onChange={onChange}
           />
         </div>

@@ -18,8 +18,8 @@ function App() {
         <Alert message="this is alert"/>
         <div className="container h-100">
         <Routes>
-          <Route path="/*" element={<Login />} />
-          <Route path="/home/*" element={<Home />} />
+          {/* <Route path="/*" element={<Login />} /> */}
+          <Route path="/*" element={<Home />} />
           <Route path="/about/*" element={<About />} />
           <Route path="/login/*" element={<Login />} />
           <Route path="/signup/*" element={<SignUp />} />
