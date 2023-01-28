@@ -1,9 +1,6 @@
 import React, { useState,useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import NoteContext from "../context/notes/NoteContext";
 export const SignUp = () => {
-    const notesContext = useContext(NoteContext);
-    const {setToken} = notesContext;
   const navigate = useNavigate();
   const [credentials, setcredentials] = useState({
     name: "",
@@ -37,7 +34,6 @@ export const SignUp = () => {
       if (json.success) {
         //success is a variable sent as a response, if true then redirect user to dashboard
         localStorage.setItem("token", json.authtoken);
-        setToken(json.authtoken)
         navigate("/login")
       } else {
         alert("Invalid credentials");
