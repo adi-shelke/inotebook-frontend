@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import NoteContext from "../context/notes/NoteContext";
 export const Login = () => {
   const notesContext = useContext(NoteContext);
-    const {setToken} = notesContext;
   const [credentials, setcredentials] = useState({email:"",password:""})
 
   const navigate = useNavigate() //used to redirect user using the router paths
@@ -25,7 +24,6 @@ export const Login = () => {
     const json= await response.json()
     if(json.success){ //success is a variable sent as a response, if true then redirect user to dashboard
       localStorage.setItem("token",json.authtoken)
-      setToken(json.authtoken)
       navigate("/home")
     }
     else

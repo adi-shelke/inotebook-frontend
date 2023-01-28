@@ -6,7 +6,7 @@ export const Navbar = () => {
       <nav className="navbar bg-dark navbar-expand-lg  navbar-dark ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            iNotebook
+            Notes Master
           </Link>
           <button
             className="navbar-toggler"

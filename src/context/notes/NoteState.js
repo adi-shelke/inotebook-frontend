@@ -3,8 +3,6 @@ import NoteContext from "./NoteContext";
 
 const NoteState = (props) =>{
   const host ="https://noted-aaej.onrender.com"
-  // let token=localStorage.getItem("token")
-  const [token, setToken] = useState(localStorage.getItem("token"))
     const fetchedNotes =[]
       const [notes, setnotes] = useState(fetchedNotes)
       const [alert, setAlert] = useState(null)
@@ -25,7 +23,7 @@ const NoteState = (props) =>{
           headers: {  
             'Content-Type': 'application/json',
             // 'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNhNDhiZDA3NWI4YTIzYzE4ZjIyNWNhIn0sImlhdCI6MTY3MTc3ODI0Nn0.-_pG9MUpfeTEJjmHfGu0ik8SbiFAgXgoo3EzlQkAzAI'
-            'auth-token' : token
+            'auth-token' : localStorage.getItem("token")
           },
         });
         const json = await response.json()
@@ -39,7 +37,7 @@ const NoteState = (props) =>{
             headers: {  
               'Content-Type': 'application/json',
               // 'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNhNDhiZDA3NWI4YTIzYzE4ZjIyNWNhIn0sImlhdCI6MTY3MTc3ODI0Nn0.-_pG9MUpfeTEJjmHfGu0ik8SbiFAgXgoo3EzlQkAzAI'
-              'auth-token' : token
+              'auth-token' : localStorage.getItem("token")
             },
             body: JSON.stringify({title, description, tag}) 
           });
@@ -54,7 +52,7 @@ const NoteState = (props) =>{
           headers: {  
             'Content-Type': 'application/json',
             // 'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNhNDhiZDA3NWI4YTIzYzE4ZjIyNWNhIn0sImlhdCI6MTY3MTc3ODI0Nn0.-_pG9MUpfeTEJjmHfGu0ik8SbiFAgXgoo3EzlQkAzAI'
-            'auth-token' : token
+            'auth-token' : localStorage.getItem("token")
           },
         });
         const newNotes=notes.filter((note)=>{return note._id!==id})
@@ -70,7 +68,7 @@ const NoteState = (props) =>{
           headers: {
             'Content-Type': 'application/json',
             // 'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNhNDhiZDA3NWI4YTIzYzE4ZjIyNWNhIn0sImlhdCI6MTY3MTc3ODI0Nn0.-_pG9MUpfeTEJjmHfGu0ik8SbiFAgXgoo3EzlQkAzAI'
-            'auth-token' : token
+            'auth-token' : localStorage.getItem("token")
           },
           body: JSON.stringify({title, description, tag}) 
         });
@@ -91,7 +89,7 @@ const NoteState = (props) =>{
 
 
     return(
-        <NoteContext.Provider value={{notes,addNote,deleteNote,editNote,fetchAllNote,setToken,token,alert}}>
+        <NoteContext.Provider value={{notes,addNote,deleteNote,editNote,fetchAllNote,alert}}>
             {props.children}
         </NoteContext.Provider>
     )
