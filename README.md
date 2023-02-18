@@ -1,7 +1,7 @@
 
 # Notes Master
 
-Notes Masrer is a tool to save your all personal notes on the cloud on the go with multiple user login system.
+Notes Master is a tool to save your all personal notes on the cloud on the go with multiple user login system.
 
 
 ## Authors
