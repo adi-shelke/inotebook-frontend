@@ -12,14 +12,14 @@ Notes Masrer is a tool to save your all personal notes on the cloud on the go wi
 ## Screenshots
 
 ![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook_dashboard.png)
-![ScreenShot](https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
-## Screenshots
-
-![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook%20log%20in.png)
 
 ## Screenshots
 
-![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook%20log%20in.png)
+![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook_login.png)
+
+## Screenshots
+
+![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook_signup.png)
 
 
 ## Run Locally
