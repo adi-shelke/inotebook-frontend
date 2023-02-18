@@ -11,7 +11,7 @@ Notes Masrer is a tool to save your all personal notes on the cloud on the go wi
 
 ## Screenshots
 
-![App Screenshot](inotebook_dashboard.png)
+![App Screenshot]([inotebook_dashboard.png](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook_dashboard.png))
 
 ## Screenshots
 
