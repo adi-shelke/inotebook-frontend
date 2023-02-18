@@ -1,70 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Notes Master
 
-## Available Scripts
+Notes Masrer is a tool to save your all personal notes on the cloud on the go with multiple user login system.
 
-In the project directory, you can run:
 
-### `npm start`
+## Authors
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [@Adinath Shelke](https://github.com/shelkeadinath)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook%20log%20in.png)
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook%20log%20in.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/inotebook%20log%20in.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  git clone https://github.com/shelkeadinath/inotebook-frontend.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Go to the project directory
 
-## Learn More
+```bash
+  cd my-project
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  npm install
+```
 
-### Code Splitting
+Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  npm run start
+```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Features
 
-### Making a Progressive Web App
+- Used MongoDB atlas as database
+- Single page application
+- Adds, removes, updates notes in realtime
+- Multiple user access mechanism
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+# Hi, I'm Katherine! 👋
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I am an IT student having a good knowledge of Web Technologies with experience of more than 2 years. I work on various web based projects, mainly on MERN stack.
+## 🔗 Links
 
-### Deployment
+[![linkedin](https://camo.githubusercontent.com/94c3651c6737e3c6c4dcfd916b109fe135caee110fa58368fb1598fcf7f0528f/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f3235362f6c696e6b6564696e2d636972636c65642e706e67)](https://linkedin.com/in/adinath%20shelke)
+[![instagram](https://camo.githubusercontent.com/3f518ffe0e82c573dc4f79a2467bd593f934dcd05a35cb5283bf34834da1eeb5/68747470733a2f2f696d672e69636f6e73382e636f6d2f666c75656e63792f3235362f696e7374616772616d2d6e65772e706e67)](https://instagram.com/adi_shelke_07)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
