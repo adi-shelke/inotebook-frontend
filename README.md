@@ -6,7 +6,7 @@ Notes Master is a tool to save your all personal notes on the cloud on the go wi
 
 ## Authors
 
-- [@Adinath Shelke](https://github.com/shelkeadinath)
+- [@Adinath Shelke](https://github.com/adi-shelke)
 
 
 ## Screenshots
@@ -15,11 +15,11 @@ Notes Master is a tool to save your all personal notes on the cloud on the go wi
 
 ## Screenshots
 
-![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/login.png)
+![App Screenshot](https://github.com/adi-shelke/inotebook-frontend/blob/master/login.png)
 
 ## Screenshots
 
-![App Screenshot](https://github.com/shelkeadinath/inotebook-frontend/blob/master/signup.png)
+![App Screenshot](https://github.com/adi-shelke/inotebook-frontend/blob/master/signup.png)
 
 
 ## Run Locally
@@ -27,7 +27,7 @@ Notes Master is a tool to save your all personal notes on the cloud on the go wi
 Clone the project
 
 ```bash
-  git clone https://github.com/shelkeadinath/inotebook-frontend.git
+  git clone https://github.com/adi-shelke/inotebook-frontend.git
 ```
 
 Go to the project directory
