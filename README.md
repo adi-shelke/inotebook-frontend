@@ -21,6 +21,10 @@ Notes Master is a tool to save your all personal notes on the cloud on the go wi
 
 ![App Screenshot](https://github.com/adi-shelke/inotebook-frontend/blob/master/dashboard.png)
 
+## Edit note modal
+
+![App Screenshot](https://github.com/adi-shelke/inotebook-frontend/blob/master/image.png)
+
 
 ## Run Locally
 
